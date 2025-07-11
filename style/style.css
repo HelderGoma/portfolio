@@ -5,7 +5,11 @@
     text-decoration: none;
 }
 
-image {
+html {
+    scroll-behavior: smooth;
+}
+
+img {
     max-width: 100%;
     height: auto;
 }
@@ -45,8 +49,8 @@ image {
 
 .section__img {
     border-radius: 30%;
-    width: 300px;
-    height: 300px
+    width: 350px;
+    height: auto;
 }
 
 .about__me {
@@ -61,8 +65,13 @@ image {
 
 .about__me-logo {
     display: flex;
+    flex-wrap: wrap;
     gap: 60px;
-    max-width: 120px;
+    max-width: 350px;
+}
+.about-img {
+    width: 100px;
+    height: 100px;
 }
 
 .about__me-info {
