@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+image {
+    max-width: 100%;
+    height: auto;
+}
+
+.center {
+    padding-left: calc(50% - 500px);
+    padding-right: calc(50% - 500px);
+}
+
+.header_nav {
+    background-color: #000000;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.header-info {
+    color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+.section__info {
+    padding-top: 32px;
+    padding-bottom: 64px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+.section__title {
+    font-size: 100px;
+    font-weight: 900px;
+}
+
+.section__img {
+    border-radius: 30%;
+    width: 300px;
+    height: 300px
+}
+
+.about__me {
+    padding-top: 32px;
+    padding-bottom: 64px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: space-between;
+    background-color: #F4F4F4;
+}
+
+.about__me-logo {
+    display: flex;
+    gap: 60px;
+    max-width: 120px;
+}
+
+.about__me-info {
+    max-width: 600px;
+}
+
+.about__me-title {
+    font-size: 50px;
+    font-weight: 700px;
+    padding: 64px;
+}
+
+.about__me-text {
+    font-size: 18px;
+    font-weight: 400px;
+}
+
+.about__me-text1 {
+    padding-bottom: 32px;
+}
+
+.about__me-text2 {
+    padding-bottom: 32px;
+}
+
+.about__me-text3 {
+    padding-bottom: 32px;
+
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+}
+
+.portfolio__title {
+    font-size: 50px;
+    font-weight: 700px;
+    padding-bottom: 40px;
+
+}
+
+.education {
+    background-color: #F4F4F4;
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+
+}
+
+.education-info {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+.education-title {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding-bottom: 64px;
+    text-align: center;
+}
+
+.education-text {
+    list-style: none;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    max-width: 350px;
+    margin: 20px;
+
+}
+
+.contacts {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contacts-title {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+.contacts-phone {
+    color: #000;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+.contacts-email {
+    color: #000;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.footer {
+    background-color: #000000;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    gap: 20px;
+}
