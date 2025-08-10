@@ -1,3 +1,8 @@
+a, button, img {
+    transition: all 0.3s ease;
+    color: #8f5b27;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,46 +14,66 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background: -webkit-linear-gradient(23deg, #88491f, #dc8f37 0%, #d8b8a5 43.7%, #6890aa 100%, #253d55);
+    background: linear-gradient(71deg, #88491f, #dc8f37 0%, #d8b8a5 42.86%, #6890aa 99.16%, #253d55);
+    min-height: 100vh;
+}
+
+
+
 img {
     max-width: 100%;
     height: auto;
 }
 
 .center {
-    padding-left: calc(50% - 500px);
-    padding-right: calc(50% - 500px);
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .header_nav {
-    background-color: #000000;
+    background: transparent;
     display: flex;
-    gap: 20px;
+    gap: 60px;
     justify-content: center;
+    color: #FFFFFF;
 }
 
 .header-info {
-    color: #ffffff;
+    color: #222db0be;
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 20px;
 }
 
+.header-info:hover {
+    color: #e0bd97;
+}
+
 .section__info {
     padding-top: 32px;
     padding-bottom: 64px;
+    padding-left: 100px;
+    padding-right: 100px;
     display: flex;
     align-items: center;
     gap: 60px;
     justify-content: space-between;
+    background: transparent;
 }
+
+
 
 .section__title {
     font-size: 100px;
-    font-weight: 900px;
+    font-weight: 900;
+    color: #1a237e;
 }
 
 .section__img {
-    border-radius: 30%;
+    border-radius: 5% 40% 5% 40%;
     width: 350px;
     height: auto;
 }
@@ -59,8 +84,8 @@ img {
     display: flex;
     align-items: center;
     gap: 60px;
-    justify-content: space-between;
-    background-color: #F4F4F4;
+    justify-content: space-around;
+    background: transparent;
 }
 
 .about__me-logo {
@@ -80,13 +105,14 @@ img {
 
 .about__me-title {
     font-size: 50px;
-    font-weight: 700px;
+    font-weight: 700;
     padding: 64px;
+    color: #1a237e;
 }
 
 .about__me-text {
     font-size: 18px;
-    font-weight: 400px;
+    font-weight: 400;
 }
 
 .about__me-text1 {
@@ -108,22 +134,48 @@ img {
     align-items: center;
     padding-top: 75px;
     padding-bottom: 75px;
-
+    background: transparent;
 }
 
 .portfolio__title {
     font-size: 50px;
-    font-weight: 700px;
+    font-weight: 700;
     padding-bottom: 40px;
+    color: #1a237e;
+}
 
+.portfolio__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+.portfolio__item {
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    border: 1px solid #5EA7A7;
+}
+.portfolio__item img {
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.portfolio__item a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #000;
+    font-weight: 600;
+}
+.portfolio__item a:hover {
+    color: #ffca28;
 }
 
 .education {
-    background-color: #F4F4F4;
+    background: transparent;
     padding-top: 75px;
     padding-bottom: 75px;
-
-
 }
 
 .education-info {
@@ -141,6 +193,7 @@ img {
     letter-spacing: 0%;
     padding-bottom: 64px;
     text-align: center;
+    color: #1a237e;
 }
 
 .education-text {
@@ -162,6 +215,7 @@ img {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    background: transparent;
 }
 
 .contacts-title {
@@ -172,11 +226,12 @@ img {
     letter-spacing: 0%;
     text-align: center;
     padding-bottom: 20px;
+    color: #1a237e;
 }
 
 
 .contacts-phone {
-    color: #000;
+    color: #1a237e;
     font-family: Montserrat;
     font-weight: 400;
     font-size: 24px;
@@ -187,7 +242,7 @@ img {
 }
 
 .contacts-email {
-    color: #000;
+    color: #1a237e;
     font-family: Montserrat;
     font-weight: 400;
     font-size: 24px;
@@ -197,11 +252,44 @@ img {
 }
 
 .footer {
-    background-color: #000000;
+    background: transparent;
     padding-top: 32px;
     padding-bottom: 32px;
     display: flex;
     gap: 20px;
     justify-content: center;
     gap: 20px;
+    color: #FFFFFF;
+}
+
+.footer img:hover {
+    transform: scale(1.1);
+}
+
+a.active, button, a.button {
+    background-color: #4CAF50;
+    color: #5EA7A7;
+    border: none;
+    cursor: pointer;
+}
+
+a.active:hover, button:hover, a.button:hover {
+    background-color: #ffca28;
+    color: #FFE4A1;
+}
+
+@media (max-width: 768px) {
+    .section__info, .about__me, .education-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    .section__title {
+        font-size: 60px;
+    }
+    .about__me-logo {
+        justify-content: center;
+    }
+    .portfolio__title, .education-title, .contacts-title {
+        font-size: 36px;
+    }
 }
